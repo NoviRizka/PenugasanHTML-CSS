@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <link rel="shortcut icon" type="image/x-icon" href="Logo.png">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Iza Florist - Toko Bunga Terpercaya</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<div class="logo">
+    <img src="Logo.png" alt="Logo">
+</div>
+<body>
+    <nav>
+        <ul>
+            <li><a href="index.html">Beranda</a></li>
+            <li><a href="profil.html">Profil</a></li>
+            <li><a href="produk.html">Produk</a></li>
+            <li><a href="saran.html">Saran</a></li>
+        </ul>
+    </nav>
+
+    <div class="feedback-container">
+        <div class="feedback-header">
+            <h1>Saran dan Masukan</h1>
+            <p>Bantu kami memberikan pelayanan yang lebih baik dengan saran dan masukan Anda</p>
+        </div>
+
+        <form class="feedback-form" action="#" method="POST">
+            <div class="form-group">
+                <label for="name">Nama Lengkap</label>
+                <input type="text" id="name" name="name" required>
+            </div>
+
+            <div class="form-group">
+                <label for="email">Email</label>
+                <input type="email" id="email" name="email" required>
+            </div>
+
+            <div class="form-group">
+                <label for="phone">Nomor Telepon</label>
+                <input type="tel" id="phone" name="phone">
+            </div>
+
+            <div class="form-group">
+                <label for="category">Kategori</label>
+                <select id="category" name="category" required>
+                    <option value="">Pilih Kategori</option>
+                    <option value="product">Produk</option>
+                    <option value="service">Layanan</option>
+                    <option value="website">Website</option>
+                    <option value="other">Lainnya</option>
+                </select>
+            </div>
+
+            <div class="form-group">
+                <label>Penilaian</label>
+                <div class="rating-group">
+                    <input type="radio" id="rating5" name="rating" value="5" required>
+                    <label for="rating5">5 (Sangat Baik)</label>
+                    <input type="radio" id="rating4" name="rating" value="4">
+                    <label for="rating4">4</label>
+                    <input type="radio" id="rating3" name="rating" value="3">
+                    <label for="rating3">3</label>
+                    <input type="radio" id="rating2" name="rating" value="2">
+                    <label for="rating2">2</label>
+                    <input type="radio" id="rating1" name="rating" value="1">
+                    <label for="rating1">1 (Sangat Buruk)</label>
+                </div>
+            </div>
+
+            <div class="form-group">
+                <label for="message">Saran dan Masukan</label>
+                <textarea id="message" name="message" required></textarea>
+            </div>
+
+            <div class="form-group">
+                <label>
+                    <input type="checkbox" name="subscribe" value="yes">
+                    Saya ingin menerima newsletter dan informasi terbaru dari Iza Florist
+                </label>
+            </div>
+
+            <button type="submit" class="submit-button">Kirim Saran</button>
+        </form>
+    </div>
+
+    <footer>
+        <p>&copy; 2024 Iza Florist. All rights reserved.</p>
+    </footer>
+</body>
+</html>
